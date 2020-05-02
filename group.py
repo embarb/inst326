@@ -7,7 +7,7 @@ def birth_date(birthdate):
     return birth_date
 
 class Student:
-    def __init__(self, id, fname, lname, birthdate, gpa, major, credits):
+    def __init__(self, id, fname, lname, birthdate, gpa, major, grade, credits):
         self.id = id
         self.name = the_name
         self.birthdate = birth_date
@@ -27,8 +27,8 @@ class Student:
                 temp_credits.append(float(line[1]))
            
     def calculate_gpa(self):
-        totalValue = 0
-        totalNumberOfCredits = 4 + 3 + 2 + 1 + 0
+        overall_value = 0
+        all_credits = 4 + 3 + 2 + 1 + 0
         for (grade, credits) in self.grade:  
            if (grade[0] == 'A'):
                totalValue += (4.0*credits[1])                   
@@ -40,7 +40,7 @@ class Student:
                totalValue += (1.0*credits[1])
            elif(grade[0] == 'F'):
                totalValue += (0.0*credits[1])
-        total_gpa = totalValue/totalNumberOfCredits
-        return total_gpa 
+        sum_gpa = overall_value/all_fCredits
+        return sum_gpa 
 
 
