@@ -6,7 +6,7 @@ professor =[]
 building =[]
 
 
-class Student:
+class Student_Schedule:
     def __init__(self): 
         self.course = course
         self.time_MWF = time_MWF
@@ -16,7 +16,7 @@ class Student:
         
         
 
-class Schedule(Student):
+class Schedule(Student_Schedule):
     def __init__(self):
         Student.__init__(self)
         
