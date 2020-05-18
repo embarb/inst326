@@ -18,7 +18,7 @@ class Student_Schedule:
 
 class Schedule(Student_Schedule):
     def __init__(self):
-        Student.__init__(self)
+        Student_Schedule.__init__(self)
         
     
     
