@@ -16,6 +16,10 @@ class GUI(tk.Frame):
         self.schedule["text"] = "Student Schedule"
         self.schedule["command"] = self.student_schedule
         self.schedule.pack(side="right")
+        self.information = tk.Button(self)
+        self.information["text"] = "Student Information"
+        self.information["command"] = self.student_information
+        self.information.pack(side="right")
 
         self.quit = tk.Button(self, text="QUIT", fg="red",
                               command=self.master.destroy)
@@ -28,6 +32,12 @@ class GUI(tk.Frame):
     def student_schedule(self):
         self.schedule_window = tk.Toplevel(self)
         self.schedule_window_button = tk.Button(self, text="Submit") #going to equal submitting their new schedule
+    
+    def student_information(self):
+        self.information_window = tk.Toplevel(self)
+        self.information_window_button = tk.Button(self, text="Submit") #going to equal submitting their new schedule
+        
+    
         
 
 root = tk.Tk()
