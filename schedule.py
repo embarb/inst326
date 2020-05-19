@@ -1,12 +1,22 @@
 #the lists below are to test it
-course = ["stat 100", "inst 326", "psyc 100", "math 115", "uslt 202"]
-time_M = ["9-9:50", "10-10:30", "11-11:30", "12-12:30", "1-1:30"]
-time_T = ["11-12:15", "10-10:40", "1-1:40", "12-12:40", "1-1:40"]
-time_W = ["9-9:50", "10-10:30", "11-11:30", "12-12:30", "1-1:30"]
-time_TH = ["11-12:15", "10-10:40", "11-11:40", "12-12:40", "1-1:40"]
-time_F = ["9-9:50", "10-10:30", "11-11:30", "12-12:30", "1-1:30"]
-professor =["Griffin", "Gabriel", "Selterman", "Rosca", "Chester"]
-building =["ESJ 2208", "BPS 1236", "BPS 1101", "ESJ 0202", "TWS 0328"]
+#course = ["stat 100", "inst 326", "psyc 100", "math 115", "uslt 202"]
+#time_M = ["9-9:50", "10-10:30", "11-11:30", "12-12:30", "1-1:30"]
+#time_T = ["11-12:15", "10-10:40", "1-1:40", "12-12:40", "1-1:40"]
+#time_W = ["9-9:50", "10-10:30", "11-11:30", "12-12:30", "1-1:30"]
+#time_TH = ["11-12:15", "10-10:40", "11-11:40", "12-12:40", "1-1:40"]
+#time_F = ["9-9:50", "10-10:30", "11-11:30", "12-12:30", "1-1:30"]
+#professor =["Griffin", "Gabriel", "Selterman", "Rosca", "Chester"]
+#building =["ESJ 2208", "BPS 1236", "BPS 1101", "ESJ 0202", "TWS 0328"]
+
+#Variables will be empty lists until information is appended
+course = []
+time_M = []
+time_T = []
+time_W = []
+time_TH = []
+time_F = []
+professor =[]
+building =[]
 
 
 class Student_Schedule:
