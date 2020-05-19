@@ -43,4 +43,7 @@ class Student:
         sum_gpa = overall_value/all_fCredits
         return sum_gpa 
 
+student = Student()
+student.read_grades()
+student.calculate_gpa()
 
