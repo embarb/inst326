@@ -30,5 +30,5 @@ class Student:
         print("Student Major " + self.major)
 
 if __name__ == "__main__":
-    final = Student('92038083', 'emily', 'barbagallo', '10', '3', '1999', '4.0', 'Information Science')
-    print(final.print_info('92038083', 'emily', 'barbagallo', '10', '3', '1999', '4.0', 'Information Science'))
+    final = Student('92038083', 'ugol', 'barba', '10', '23', '1997', '3.8', 'Information Science')
+    print(final.print_info('92038083', 'ugol', 'barba', '10', '23', '1997', '3.8', 'Information Science'))
