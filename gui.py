@@ -24,7 +24,7 @@ class GUI(tk.Frame):
         
     def student_schedule(self):
         self.schedule_window = tk.Toplevel(self)
-        self.schedule_window_button = tk.Button(self, command=Schedule.schedule(self)) #going to equal submitting their new schedule
+        self.schedule_window_button = tk.Button(self, command=Schedule.schedule) #going to equal submitting their new schedule
 
     def student_information(self):
         self.information_window = tk.Toplevel(self)
