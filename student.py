@@ -1,4 +1,8 @@
 class Student:
+    """
+    A class that stores information about the student. It is has the students name(first, last) the students birthday, the students
+    gpa and major.
+    """
     def __init__(self, id, fname, lname, day, month, year, gpa, major):
         self.id = id
         self.fname = fname
@@ -10,9 +14,15 @@ class Student:
         self.major = major
 
     def return_info(self, id, fname, lname, day, month, year, gpa, major):
+        """
+        returns the information on the student.
+        """
         return self.id, self.fname, self.lname, self.day, self.month, self.year, self.gpa, self.major
 
     def print_info(self, id, fname, lname, day, month, year, gpa, major):
+        """
+        It prints the information of the student. The name, id, birthday, gpa and their major.
+        """
         print("Student ID: " + self.id)
         print("Student Name: " + self.fname + " " + self.lname)
         print("Student Birthdate: " + self.month + "/" + self.day + "/" + self.year)
