@@ -43,7 +43,8 @@ class Student:
         sum_gpa = overall_value/all_fCredits
         return sum_gpa 
 
-student = Student()
-student.read_grades()
+student = Student('ID ="12356746" ', 'fname ="Emi" ', 'lname ="Bieber" ', 'birthdate ="26,October,1998" ', 'gpa="3.8" ', 'major="InfoSci" ',
+'grade="[]" ', 'credits="70" ')
 student.calculate_gpa()
 
+print(student)
