@@ -9,6 +9,9 @@ class Student:
         self.gpa = gpa
         self.major = major
 
+    def return_info(self, id, fname, lname, day, month, year, gpa, major):
+        return self.id, self.fname, self.lname, self.day, self.month, self.year, self.gpa, self.major
+
     def print_info(self, id, fname, lname, day, month, year, gpa, major):
         print("Student ID: " + self.id)
         print("Student Name: " + self.fname + " " + self.lname)
@@ -17,6 +20,5 @@ class Student:
         print("Student Major " + self.major)
 
 if __name__ == "__main__":
-    final = Student('92038083', 'emi', 'bieber', '10', '3', '1999', '4.0', 'Information Science')
-    print(final.print_info('92038083', 'emi', 'bieber', '10', '3', '1999', '4.0', 'Information Science'))
-
+    final = Student('92038083', 'emily', 'barbagallo', '10', '3', '1999', '4.0', 'Information Science')
+    print(final.print_info('92038083', 'emily', 'barbagallo', '10', '3', '1999', '4.0', 'Information Science'))
