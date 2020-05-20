@@ -7,17 +7,13 @@ class GUI(tk.Frame):
         self.master = master
         self.pack()
         self.create_buttons()
-
+        
     def create_buttons(self):
-        self.schedule = tk.Button(self)
-        self.schedule["text"] = "Student Schedule"
-        self.schedule["command"] = self.student_schedule
-        self.schedule.pack(side="right")
-        self.information = tk.Button(self)
-        self.information["text"] = "Student Information"
-        self.information["command"] = self.student_information
+        self.schedule = tk.Button(self, text= "Student Schedule", command =  self.student_schedule)
+        self.schedule.pack(side = "right")
+        self.information = tk.Button(self, text= "Student Information", command = self.student_information)
         self.information.pack(side="right")
-
+        
         self.quit = tk.Button(self, text="QUIT", fg="red",
                               command=self.master.destroy)
         self.quit.pack(side="bottom")
@@ -25,7 +21,7 @@ class GUI(tk.Frame):
     def student_schedule(self):
         self.schedule_window = tk.Toplevel(self)
         self.schedule_window_button = tk.Button(self, command=Schedule.schedule) #going to equal submitting their new schedule
-
+        
     def student_information(self):
         self.information_window = tk.Toplevel(self)
         self.information_window_button = tk.Button(self, command=Student.final) #going to equal submitting their new schedule
