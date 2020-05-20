@@ -1,4 +1,6 @@
 import tkinter as tk
+from student import Student
+from schedule import Schedule
 class GUI(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master)
@@ -22,11 +24,11 @@ class GUI(tk.Frame):
         
     def student_schedule(self):
         self.schedule_window = tk.Toplevel(self)
-        self.schedule_window_button = tk.Button(self, text="Submit") #going to equal submitting their new schedule
-    
+        self.schedule_window_button = tk.Button(self, command=Schedule.schedule(self)) #going to equal submitting their new schedule
+
     def student_information(self):
         self.information_window = tk.Toplevel(self)
-        self.information_window_button = tk.Button(self, text="Submit") #going to equal submitting their new schedule
+        self.information_window_button = tk.Button(self, command=Student('1093840', 'Emily', 'Barbagallo', '1-1-1999', 3.8, 'Information Science', 'A', 4.0)) #going to equal submitting their new schedule
         
     
         
